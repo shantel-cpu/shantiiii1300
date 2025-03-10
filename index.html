@@ -3,218 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce Table</title>
+    <title>Customer Registration Form</title>
     <style>
-        table {
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
             width: 100%;
-            border-collapse: collapse;
+            padding: 10px;
+            box-sizing: border-box;
         }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background: #5cb85c;
+            color: #fff;
+            border: none;
+            cursor: pointer;
         }
-        th {
-            background-color: #f2f2f2;
-            text-align: left;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
+        .form-group button:hover {
+            background: #4cae4c;
         }
     </style>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th>E-commerce Firm</th>
-                <th>Product Name</th>
-                <th>Product Category</th>
-                <th>Product Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Amazon</td>
-                <td>Echo Dot</td>
-                <td>Electronics</td>
-                <td>
-                    <ul>
-                        <li>Smart speaker with Alexa</li>
-                        <li>Voice control your music</li>
-                        <li>Compatible with smart home devices</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>eBay</td>
-                <td>Apple iPhone 13</td>
-                <td>Mobile Phones</td>
-                <td>
-                    <ul>
-                        <li>6.1-inch display</li>
-                        <li>A15 Bionic chip</li>
-                        <li>Dual-camera system</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Walmart</td>
-                <td>Samsung Galaxy S21</td>
-                <td>Mobile Phones</td>
-                <td>
-                    <ul>
-                        <li>6.2-inch display</li>
-                        <li>Exynos 2100</li>
-                        <li>Triple-camera system</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Best Buy</td>
-                <td>MacBook Pro</td>
-                <td>Computers</td>
-                <td>
-                    <ul>
-                        <li>13-inch display</li>
-                        <li>M1 chip</li>
-                        <li>16GB RAM</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Target</td>
-                <td>PlayStation 5</td>
-                <td>Gaming</td>
-                <td>
-                    <ul>
-                        <li>Ultra-high-speed SSD</li>
-                        <li>Ray tracing</li>
-                        <li>4K-TV gaming</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Newegg</td>
-                <td>ASUS ROG Strix</td>
-                <td>Computers</td>
-                <td>
-                    <ul>
-                        <li>Intel Core i7</li>
-                        <li>16GB RAM</li>
-                        <li>NVIDIA GeForce RTX 3060</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>AliExpress</td>
-                <td>Xiaomi Mi Band 6</td>
-                <td>Wearables</td>
-                <td>
-                    <ul>
-                        <li>1.56-inch AMOLED display</li>
-                        <li>14-day battery life</li>
-                        <li>Heart rate monitoring</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Flipkart</td>
-                <td>OnePlus 9</td>
-                <td>Mobile Phones</td>
-                <td>
-                    <ul>
-                        <li>6.55-inch display</li>
-                        <li>Snapdragon 888</li>
-                        <li>Triple-camera system</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Snapdeal</td>
-                <td>HP Pavilion</td>
-                <td>Computers</td>
-                <td>
-                    <ul>
-                        <li>15.6-inch display</li>
-                        <li>Intel Core i5</li>
-                        <li>8GB RAM</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Myntra</td>
-                <td>Nike Air Max</td>
-                <td>Footwear</td>
-                <td>
-                    <ul>
-                        <li>Breathable mesh</li>
-                        <li>Foam midsole</li>
-                        <li>Rubber outsole</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Shopify</td>
-                <td>Canon EOS R5</td>
-                <td>Cameras</td>
-                <td>
-                    <ul>
-                        <li>45MP full-frame sensor</li>
-                        <li>8K video recording</li>
-                        <li>Dual Pixel CMOS AF</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>BigCommerce</td>
-                <td>LG OLED TV</td>
-                <td>Electronics</td>
-                <td>
-                    <ul>
-                        <li>4K resolution</li>
-                        <li>AI ThinQ</li>
-                        <li>Dolby Vision IQ</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Magento</td>
-                <td>Dyson V11</td>
-                <td>Home Appliances</td>
-                <td>
-                    <ul>
-                        <li>High torque cleaner head</li>
-                        <li>LCD screen</li>
-                        <li>60 minutes run time</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Rakuten</td>
-                <td>Fitbit Charge 4</td>
-                <td>Wearables</td>
-                <td>
-                    <ul>
-                        <li>Built-in GPS</li>
-                        <li>Heart rate monitor</li>
-                        <li>7-day battery life</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>JD.com</td>
-                <td>Huawei MateBook X</td>
-                <td>Computers</td>
-                <td>
-                    <ul>
-                        <li>13-inch display</li>
-                        <li>Intel Core i5</li>
-                        <li>16GB RAM</li>
-                    </ul>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        <h2>Customer Registration</h2>
+        <form>
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
 </body>
-</html>
+</html></div>
